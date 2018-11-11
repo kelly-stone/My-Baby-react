@@ -20,16 +20,16 @@ class Diary extends React.Component{
         return(
             <div>
                 <h2>You are my little angel</h2>
-                <DiaryAddForm />
-                {/* {this.state.diarys.map(diary =>{
+                <DiaryAddForm addDiary={this.addDiary}/>
+               {/* {this.state.diarys.map(diary =>{
                     <div>
                     <h3>{diary.Name}</h3>,
                     <h3>{diary.Date}</h3>,
                     <h3>{diary.Location}</h3>,
                     <h3>{diary.Subject}</h3>,
                     <h3>{diary.Img}</h3>
-                    </div>
-                })} */}
+                    </div> */}
+                })} 
             </div>
         )
     }
