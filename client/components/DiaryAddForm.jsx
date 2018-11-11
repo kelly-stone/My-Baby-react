@@ -14,13 +14,13 @@ class DiaryAddForm extends React.Component {
     submit(e) {
         e.preventDefault()
         const Diary = this.state.Diary
-        console.log({ Diary })
+       
         this.props.addDiary(Diary)
     }
 
     updateDetail(e) {
         const Diary = this.state.Diary
-        console.log(e.target.value)
+       
         Diary[e.target.name] = e.target.value
         this.setState({ Diary })
     }
