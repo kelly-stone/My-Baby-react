@@ -27,12 +27,12 @@ class DiaryAddForm extends React.Component {
     render() {
         return (
             <form onSubmit={this.submit}>
-                <input placeholder="child name" type="text" name="Name" onChange={this.updateDetail} />
-                <input placeholder="dd/mm/yy" type="text" name="Date" onChange={this.updateDetail} />
-                <input placeholder="where" type="text" name="Location" onChange={this.updateDetail} />
-                <input placeholder="what happen" type="text" name="Subject" onChange={this.updateDetail} />
-                <input placeholder="photo" type="text" name="Img" onChange={this.updateDetail} />
-                <input type="submit" value="add me" />
+                Child Name:   <input placeholder="child name" type="text" name="Name" onChange={this.updateDetail} /><br></br><br></br>
+                Event date:   <input placeholder="dd/mm/yy" type="text" name="Date" onChange={this.updateDetail} /><br></br><br></br>
+                location:     <input placeholder="where" type="text" name="Location" onChange={this.updateDetail} /><br></br><br></br>
+                Event:        <input placeholder="what happen" type="text" name="Subject" onChange={this.updateDetail} /><br></br><br></br>
+                Image:        <input placeholder="photo" type="text" name="Img" onChange={this.updateDetail} /><br></br><br></br>
+                              <input type="submit" value="add me" />
             </form>
         )
 
