@@ -5,7 +5,7 @@ class DiaryAddForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            Diary: { Name: "", Date: "", Location: "", Suject: "", Img: "" }
+            Diary: { Name: "", Date: "", Location: "", Suject: "", Image: "" }
         }
         this.submit = this.submit.bind(this)
         this.updateDetail = this.updateDetail.bind(this)
@@ -28,11 +28,11 @@ class DiaryAddForm extends React.Component {
         return (
             <form onSubmit={this.submit}>
                 Child Name:   <input placeholder="child name" type="text" name="Name" onChange={this.updateDetail} /><br></br><br></br>
-                Event date:   <input placeholder="dd/mm/yy" type="text" name="Date" onChange={this.updateDetail} /><br></br><br></br>
-                location:     <input placeholder="where" type="text" name="Location" onChange={this.updateDetail} /><br></br><br></br>
+                Age:          <input placeholder="year old" type="text" name="Date" onChange={this.updateDetail} /><br></br><br></br>
+                Location:     <input placeholder="where" type="text" name="Location" onChange={this.updateDetail} /><br></br><br></br>
                 Event:        <input placeholder="what happen" type="text" name="Subject" onChange={this.updateDetail} /><br></br><br></br>
-                Image:        <input placeholder="photo" type="text" name="Img" onChange={this.updateDetail} /><br></br><br></br>
-                              <input type="submit" value="add me" />
+                Image:        <input placeholder="photo" type="file" name="Image" onChange={this.updateDetail} /><br></br><br></br>
+            <input type="submit" value="add me" />
             </form>
         )
 
